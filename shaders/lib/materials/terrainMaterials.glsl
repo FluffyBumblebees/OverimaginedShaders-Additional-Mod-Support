@@ -1,3 +1,76 @@
+if (mat == 12345) { // Lime Glowstone
+    noSmoothLighting = true; noDirectionalShading = true;
+    lmCoordM = vec2(0.95, 0.0);
+
+    float factor = pow2(color.g);
+    emission = pow2(factor) * 3.25;
+    if (CheckForColor(color.rgb, vec3(166, 179, 140))) emission *= 1.4;
+    color.rg += factor * vec2(0.15, 0.35);
+}
+if (mat == 12346) { // Orange Glowstone
+    noSmoothLighting = true; noDirectionalShading = true;
+    lmCoordM = vec2(0.95, 0.0);
+
+    float factor = pow2(color.g);
+    emission = pow2(factor) * 8.0;
+    if (CheckForColor(color.rgb, vec3(215, 184, 156))) emission *= 1.6;
+    color.rg += factor * vec2(0.6, 0.25);
+}
+if (mat == 12347) { // Cyan Glowstone
+    noSmoothLighting = true; noDirectionalShading = true;
+    lmCoordM = vec2(1.0, 0.25);
+
+    float factor = pow2(color.g);
+    emission = pow2(factor) * 2.475;
+    if (CheckForColor(color.rgb, vec3(135, 180, 255))) emission *= 1.6;
+    color.rgb += factor * vec3(0.25, 0.675, 1.0);
+}
+if (mat == 12348) { // Soul Glowstone
+    noSmoothLighting = true; noDirectionalShading = true;
+    lmCoordM = vec2(1.0, 0.25);
+
+    float factor = pow2(color.g);
+    emission = pow2(factor) * 0.2;
+    if (CheckForColor(color.rgb, vec3(125, 105, 215))) emission *= 1.6;
+    color.rgb += factor * vec3(0.15, 0.075, 0.4);
+}
+if (mat == 12349) { // Blue Glowstone
+    noSmoothLighting = true; noDirectionalShading = true;
+    lmCoordM = vec2(1.0, 0.75);
+
+    float factor = pow2(color.g);
+    emission = pow2(factor) * 3.75;
+    if (CheckForColor(color.rgb, vec3(127, 127, 255))) emission *= 1.6;
+    color.rgb += factor * vec3(0.25, 0.25, 1.0);
+}
+if (mat == 12350) { // Purple Glowstone
+    noSmoothLighting = true; noDirectionalShading = true;
+    lmCoordM = vec2(1.0, 1.0);
+
+    float factor = pow2(color.g);
+    emission = pow2(factor) * 6.0;
+    if (CheckForColor(color.rgb, vec3(255, 127, 255))) emission *= 1.6;
+    color.rgb += factor * vec3(0.9, 0.25, 0.9);
+}
+if (mat == 12351) { // Black Glowstone
+	noSmoothLighting = true; noDirectionalShading = true;
+    lmCoordM = vec2(1.0, 1.0);
+
+    float factor = pow2(color.g);
+    emission = pow2(factor) * 6.0;
+    if (CheckForColor(color.rgb, vec3(255, 127, 255))) emission *= 1.6;
+    color.rgb += factor * vec3(0.9, 0.25, 0.9);
+}
+if (mat == 12352) { // Gray Glowstone
+    noSmoothLighting = true; noDirectionalShading = true;
+    lmCoordM = vec2(1.0, 1.0);
+
+    float factor = pow2(color.g);
+    emission = pow2(factor) * 6.0;
+    if (CheckForColor(color.rgb, vec3(255, 127, 255))) emission *= 1.6;
+    color.rgb += factor * vec3(0.9, 0.25, 0.9);
+}
+
 if (mat < 10512) {
     if (mat < 10256) {
         if (mat < 10128) {
