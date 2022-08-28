@@ -49,6 +49,7 @@ Supported (Empty means none):
 		- Tinker's construct
 		- Tech Reborn
 		- Wild Backport
+		- Crotopia
 		
   - Emissives
   		- Blockus (Partial)
