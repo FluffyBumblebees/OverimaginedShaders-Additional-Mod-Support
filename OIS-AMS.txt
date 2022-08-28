@@ -24,6 +24,7 @@ Structure of development:
 ____
 
 Supported (Empty means none):
+
   - Leaves/Foliage
 		- BYG
 		- Twilight Forest
@@ -48,7 +49,11 @@ Supported (Empty means none):
 		- Tinker's construct
 		- Tech Reborn
 		- Wild Backport
+		
   - Emissives
+  		- Blockus (Partial)
+		- Consistency+ (Partial)
+		
   - Raytracing
   
 ____
