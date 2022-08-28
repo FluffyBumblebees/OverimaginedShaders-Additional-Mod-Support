@@ -53,9 +53,8 @@ void DoWave(inout vec3 playerPos, int mat) {
     } else if (mat == 10020) { // Upper Layer Waving Foliage
         DoWave_Foliage(playerPos.xyz, worldPos);
     }
-
     #if WAVING_BLOCKS >= 2
-        else if (mat == 10008 || mat == 10012) { // Leaves, Vine
+        else if (mat == 10008 || mat == 10012 || mat == 12363) { // Leaves, Vine
             DoWave_Leaves(playerPos.xyz, worldPos);
         }
     #endif
