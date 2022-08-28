@@ -1,0 +1,57 @@
+Anybody mod-related bugs are my responsibility, not others that contribute to the main projects.
+
+DISCLAIMER: NETHER FOLIAGE NOW WAVES! THIS IS NOT A BUG, THIS IS INTENTIONAL!
+
+Overimagined Shaders - Additional Mod Support is a fork of Overimagined Shaders, which is a fork of Complementary Reimagined shaders.
+It intends to add proper mod support without any compromises. It is important to note that this project will never be fully complete, as it is
+impossible to support every single mod out there. Especially with the limited time that I have on hand. If you want to contribute, go ahead by all means!
+
+I will only support blocks! I will never spend my time dealing with custom dimensions. Too much work!
+
+Declarations of development: I will...
+  - Be supporting popular mods first
+  - Focus on fabric mods. Some forge mods might be sprinkled in there.
+  - State that this is mainly a personal project to fulfill my own needs for mod support.
+  - Do my best to make the support as geniune as possible.
+  - Most likely be inconsistent as I have a life to deal with.
+  - Not tolerate any sorts of demands. E.g. PLZZ ADD SUPPORT FOR X MOD. If you want to enquire about a mod, please be considerate!
+____
+
+Structure of development:
+	- Leaves/Foliage waving first!
+	- Emissives
+	- Raytracing
+____
+
+Supported (Empty means none):
+  - Leaves/Foliage
+		- BYG
+		- Twilight Forest
+		- Blockus
+		- Stained Trees
+		- Better End
+		- Better Nether
+		- Eden Ring
+		- Tech Reborn
+		- Botania
+		- Cinderscapes
+		- Terrestria
+		- Traverse
+		- Paradise Lost
+		- Chipped
+		- Overweight Farming
+		- Floral Flair
+		- Enderscape
+		- Improved End
+		- Missing Wilds
+		- Promenade
+		- Tinker's construct
+		- Tech Reborn
+		- Wild Backport
+  - Emissives
+  - Raytracing
+  
+____
+  
+If any supported mod has a block that is missing a feature, please report it!
+
