@@ -48,27 +48,76 @@ if (mat == 12350) { // Purple Glowstone
     lmCoordM = vec2(1.0, 1.0);
 
     float factor = pow2(color.g);
-    emission = pow2(factor) * 6.0;
+    emission = pow2(factor) * 6.75;
     if (CheckForColor(color.rgb, vec3(255, 127, 255))) emission *= 1.6;
     color.rgb += factor * vec3(0.9, 0.25, 0.9);
 }
 if (mat == 12351) { // Black Glowstone
 	noSmoothLighting = true; noDirectionalShading = true;
-    lmCoordM = vec2(1.0, 1.0);
+    lmCoordM = vec2(1.3);
 
-    float factor = pow2(color.g);
-    emission = pow2(factor) * 6.0;
-    if (CheckForColor(color.rgb, vec3(255, 127, 255))) emission *= 1.6;
-    color.rgb += factor * vec3(0.9, 0.25, 0.9);
+    float factor = pow2((color.r + color.g, color.b)/3);
+    emission = pow2(factor) * 22500.0;
+
+    if (!CheckForColor(color.rgb, vec3(0))) {
+        emission *= 1.5;
+        color.rgb += factor * vec3(2);
+    }
 }
 if (mat == 12352) { // Gray Glowstone
     noSmoothLighting = true; noDirectionalShading = true;
-    lmCoordM = vec2(1.0, 1.0);
+    lmCoordM = vec2(1.3);
+
+    float factor = pow2((color.r + color.g, color.b)/3);
+    emission = pow2(factor) * 2250.0;
+
+    if (!CheckForColor(color.rgb, vec3(0))) {
+        emission *= 2.3;
+        color.rgb += factor * vec3(2);
+    }
+}
+if (mat == 12353) { // Light Blue Glowstone
+    noSmoothLighting = true; noDirectionalShading = true;
+    lmCoordM = vec2(1.0, 0.75);
 
     float factor = pow2(color.g);
-    emission = pow2(factor) * 6.0;
-    if (CheckForColor(color.rgb, vec3(255, 127, 255))) emission *= 1.6;
-    color.rgb += factor * vec3(0.9, 0.25, 0.9);
+    emission = pow2(factor) * 1.4;
+    emission *= 1.5;
+    color.rgb += factor * vec3(0.25, 0.25, 1.0);
+}
+if (mat == 12354) { // Yellow Glowstone
+    noSmoothLighting = true; noDirectionalShading = true;
+    lmCoordM = vec2(0.7, 0.0);
+
+    float factor = pow2(color.g);
+    emission = pow2(factor) * 1.5;
+    emission *= 1.6;
+    color.rg += factor * vec2(0.25, 0.25);
+}
+if (mat == 12355) { // Magenta Glowstone
+    noSmoothLighting = true; noDirectionalShading = true;
+    lmCoordM = vec2(0.7);
+
+    float factor = pow2((color.g + color.b + color.r)/3);
+    emission = pow2(factor) * 1.6;
+    color.rgb += factor * vec3(0.9, 0.5, 0.8);
+}
+if (mat == 12356) { // Pink Glowstone
+    noSmoothLighting = true; noDirectionalShading = true;
+    lmCoordM = vec2(1.1);
+
+    float factor = pow2(color.g);
+    emission = pow2(factor) * 2.2;
+    color.rgb += factor * vec3(0.9, 0.4, 0.75);
+}
+if (mat == 12357) { // Red Glowstone
+    noSmoothLighting = true; noDirectionalShading = true;
+    lmCoordM = vec2(1.4, 0.8);
+
+    float factor = pow2(color.r * (color.g + color.b));
+    emission = pow2(factor);
+    emission *= 0.00001;
+    color.rgb += factor * vec3(0.9, vec2(0.3));
 }
 
 if (mat < 10512) {
